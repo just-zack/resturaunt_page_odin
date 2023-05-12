@@ -1,6 +1,7 @@
 import about from "./about.js";
 import contact from "./contact.js";
 import menu from "./menu.js";
+import home from "./home.js";
 
 const btnHome = document.createElement("button");
 const btnMenu = document.createElement("button");
@@ -15,7 +16,7 @@ navigation.setAttribute("id", "navigation");
 content.appendChild(navigation);
 
 btnHome.innerText = "Home";
-//need to figure home button
+btnHome.onclick = home;
 navigation.appendChild(btnHome);
 
 btnMenu.innerText = "Menu";
