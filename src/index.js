@@ -7,26 +7,37 @@ const btnHome = document.createElement("button");
 const btnMenu = document.createElement("button");
 const btnAbout = document.createElement("button");
 const btnContact = document.createElement("button");
-const content = document.createElement("div");
+const content = document.getElementById("content");
 const navigation = document.createElement("div");
 
-content.setAttribute("id", "content");
-document.body.appendChild(content);
-navigation.setAttribute("id", "navigation");
-content.appendChild(navigation);
+function setNav() {
+  navigation.setAttribute("id", "navigation");
+  content.appendChild(navigation);
 
-btnHome.innerText = "Home";
-btnHome.onclick = home;
-navigation.appendChild(btnHome);
+  const logo = document.createElement("img");
+  logo.src = "./content/logo.png";
+  logo.setAttribute("id", "logo");
+  navigation.appendChild(logo);
 
-btnMenu.innerText = "Menu";
-btnMenu.onclick = menu;
-navigation.appendChild(btnMenu);
+  btnHome.innerText = "Home";
+  btnHome.setAttribute("id", "home");
+  btnHome.onclick = home;
+  navigation.appendChild(btnHome);
 
-btnAbout.innerText = "About";
-btnAbout.onclick = about;
-navigation.appendChild(btnAbout);
+  btnMenu.innerText = "Menu";
+  btnMenu.setAttribute("id", "menu");
+  btnMenu.onclick = menu;
+  navigation.appendChild(btnMenu);
 
-btnContact.innerText = "Contact";
-btnContact.onclick = contact;
-navigation.appendChild(btnContact);
+  btnAbout.innerText = "About";
+  btnAbout.setAttribute("id", "about");
+  btnAbout.onclick = about;
+  navigation.appendChild(btnAbout);
+
+  btnContact.innerText = "Contact";
+  btnContact.setAttribute("id", "contact");
+  btnContact.onclick = contact;
+  navigation.appendChild(btnContact);
+}
+
+setNav();

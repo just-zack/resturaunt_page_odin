@@ -7,6 +7,8 @@
 #content {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  background-color: var(--main_color);
 }
 
 #navigation {
@@ -26,6 +28,7 @@
   background-image: url(./content/hero_image.png);
   background-size: cover;
   height: 60vw;
+  flex: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +51,8 @@
 #text {
   background-color: var(--main_color);
   padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .paragraph {

@@ -8,6 +8,7 @@ module.exports = {
     menu: "./src/menu.js",
     contact: "./src/contact.js",
     about: "./src/about.js",
+    home: "./src/home.js",
   },
   devtool: "inline-source-map",
   plugins: [
