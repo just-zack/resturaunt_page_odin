@@ -27,13 +27,13 @@ navigation.appendChild(buttonContainer);
 btnHome.innerText = "Home";
 btnHome.setAttribute("id", "home");
 btnHome.classList.add("nav_button");
-btnHome.addEventListener("click", displayHome());
+btnHome.addEventListener("click", displayHome);
 buttonContainer.appendChild(btnHome);
 
 btnMenu.innerText = "Menu";
 btnMenu.setAttribute("id", "menu");
 btnMenu.classList.add("nav_button");
-btnMenu.addEventListener("click", hideHome());
+btnMenu.addEventListener("click", hideHome);
 buttonContainer.appendChild(btnMenu);
 
 btnAbout.innerText = "About";

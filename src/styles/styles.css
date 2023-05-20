@@ -4,6 +4,10 @@
   --main_color: black;
   --secondary_color: #ffbd59;
 }
+
+body {
+  background-color: var(--main_color);
+}
 #content {
   display: flex;
   flex-direction: column;

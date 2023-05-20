@@ -4,7 +4,7 @@ const { Script } = require("vm");
 const { type } = require("os");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: "./src/index.js",
     menu: "./src/menu.js",
@@ -24,6 +24,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     assetModuleFilename: "[name][ext]",
+  },
+  devServer: {
+    open: true,
+    hot: true,
+    compress: true,
   },
   module: {
     rules: [

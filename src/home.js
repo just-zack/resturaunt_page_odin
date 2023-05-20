@@ -1,5 +1,6 @@
+const content = document.getElementById("content");
+
 export function displayHome() {
-  const content = document.getElementById("content");
   const homeContainer = document.createElement("div");
 
   homeContainer.setAttribute("id", "home_container");
@@ -37,6 +38,24 @@ export function displayHome() {
 }
 
 export function hideHome() {
-  const homeTab = document.getElementById("home_container");
-  homeTab.style.display = "none";
+  const homeContainer = document.getElementById("home_container");
+  const hero = document.getElementById("hero");
+  const heroText = document.getAnimations("hero_text");
+  const text = document.getElementById("text");
+  const footer = document.getElementById("footer");
+  const footerContent = document.getElementsByClassName("paragraph");
+
+  content.removeChild(homeContainer);
+
+  homeContainer.removeChild(hero);
+
+  hero.removeChild(heroText);
+
+  homeContainer.removeChild(text);
+
+  text.removeChild(paragraph);
+
+  homeContainer.removeChild(footer);
+
+  footer.removeChild(footerContent);
 }
