@@ -4,6 +4,7 @@ import menu, { displayMenu, hideMenu } from "./menu.js";
 import home, { displayHome, hideHome } from "./home.js";
 import "./styles/styles.css";
 import logoImage from "./content/logo.png";
+let currentPage = "";
 
 const btnHome = document.createElement("button");
 const btnMenu = document.createElement("button");
@@ -33,7 +34,7 @@ buttonContainer.appendChild(btnHome);
 btnMenu.innerText = "Menu";
 btnMenu.setAttribute("id", "menuBTN");
 btnMenu.classList.add("nav_button");
-btnMenu.addEventListener("click", setMenu());
+btnMenu.addEventListener("click", setMenu);
 buttonContainer.appendChild(btnMenu);
 
 btnAbout.innerText = "About";
@@ -48,17 +49,18 @@ btnContact.classList.add("nav_button");
 btnContact.onclick = contact;
 buttonContainer.appendChild(btnContact);
 
-function showTabs() {
-  const homeTab = document.getElementById("home_container");
-  homeTab.style.display = "block";
-}
+displayHome();
 
 function setMenu() {
+  if ((currentPage = "home")) {
+    hideHome();
+  }
   displayMenu();
-  hideHome();
 }
 
 function setHome() {
+  if ((currentPage = "menu")) {
+    hideMenu();
+  }
   displayHome();
-  hideMenu();
 }

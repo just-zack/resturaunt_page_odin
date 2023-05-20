@@ -1,14 +1,16 @@
 const content = document.getElementById("content");
+let currentPage = "";
 
 export function displayMenu() {
+  currentPage = "menu";
   const menuContainer = document.createElement("div");
   menuContainer.setAttribute("id", "menu_section");
   content.appendChild(menuContainer);
 
-  const menu = document.createElement("h1");
-  menu.setAttribute("id", "menu");
-  menu.innerText = "Our Menu";
-  menuContainer.appendChild(menu);
+  const menuTitle = document.createElement("h1");
+  menuTitle.setAttribute("id", "menu_title");
+  menuTitle.innerText = "Our Menu";
+  menuContainer.appendChild(menuTitle);
 
   const buttonContainer = document.createElement("div");
   buttonContainer.setAttribute("id", "button_container");
@@ -93,62 +95,49 @@ export function displayMenu() {
 
 export function hideMenu() {
   const menuContainer = document.getElementById("menu_section");
-  content.removeChild(menuContainer);
-
-  const menu = document.getElementById("menu");
-  menuContainer.removeChild(menu);
-
-  const buttonContainer = document.getElementById("button_container");
-  menuContainer.removeChild(buttonContainer);
-
-  const food = document.getElementById("food");
-  buttonContainer.removeChild(food);
-
-  const drinks = document.getElementById("drinks");
-  buttonContainer.removeChild(drinks);
-
+  const menuTitle = document.getElementById("menu_title");
+  //const buttonContainer = document.getElementById("button_container");
+  //const food = document.getElementById("food");
   const menuGeneral = document.getElementById("menu_general");
-  menuContainer.removeChild(menuGeneral);
-
   const menuCard1 = document.getElementById("menuCard1");
-  menuGeneral.removeChild(menuCard1);
-
   const streetBurger = document.getElementById("streetBurger");
-  menuCard1.removeChild(streetBurger);
-
   const streetBurgerDescription = document.getElementById(
     "streetBurgerDescription"
   );
-  menuCard1.removeChild(streetBurgerDescription);
-
   const streetBurgerPrice = document.getElementById("streetBurgerPrice");
-  menuCard1.removeChild(streetBurgerPrice);
-
   const menuCard2 = document.getElementById("menuCard2");
-  menuGeneral.removeChild(menuCard2);
-
   const streetNoodles = document.getElementById("streetNoodles");
-  menuCard2.removeChild(streetNoodles);
-
   const streetNoodlesDescription = document.getElementById(
     "streetNoodlesDescription"
   );
-  menuCard2.removeChild(streetNoodlesDescription);
-
   const streetNoodlesPrice = document.getElementById("streetNoodlesPrice");
-  menuCard2.removeChild(streetNoodlesPrice);
-
   const menuCard3 = document.getElementById("menuCard3");
-  menuGeneral.removeChild(menuCard3);
 
+  //const drinks = document.getElementById("drinks");
   const streetSamosas = document.getElementById("streetSamosas");
-  menuCard3.removeChild(streetSamosas);
-
   const streetSamosasDescription = document.getElementById(
     "streetSamosasDescription"
   );
-  menuCard3.removeChild(streetSamosasDescription);
-
   const streetSamosasPrice = document.getElementById("streetSamosasPrice");
+
+  content.removeChild(menuContainer);
+  menuContainer.removeChild(menuTitle);
+  //menuContainer.removeChild(buttonContainer);
+  //buttonContainer.removeChild(food);
+  //buttonContainer.removeChild(drinks);
+  menuContainer.removeChild(menuGeneral);
+  menuGeneral.removeChild(menuCard1);
+  menuCard1.removeChild(streetBurger);
+  menuCard1.removeChild(streetBurgerDescription);
+  menuCard1.removeChild(streetBurgerPrice);
+  menuGeneral.removeChild(menuCard2);
+  menuCard2.removeChild(streetNoodles);
+  menuCard2.removeChild(streetNoodlesDescription);
+  menuCard2.removeChild(streetNoodlesPrice);
+  menuGeneral.removeChild(menuCard3);
+  menuCard3.removeChild(streetSamosas);
+  menuCard3.removeChild(streetSamosasDescription);
   menuCard3.removeChild(streetSamosasPrice);
+
+  currentPage = "";
 }
