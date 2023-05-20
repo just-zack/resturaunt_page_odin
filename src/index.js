@@ -1,6 +1,6 @@
 import about from "./about.js";
 import contact from "./contact.js";
-import menu from "./menu.js";
+import menu, { displayMenu, hideMenu } from "./menu.js";
 import home, { displayHome, hideHome } from "./home.js";
 import "./styles/styles.css";
 import logoImage from "./content/logo.png";
@@ -27,13 +27,13 @@ navigation.appendChild(buttonContainer);
 btnHome.innerText = "Home";
 btnHome.setAttribute("id", "home");
 btnHome.classList.add("nav_button");
-btnHome.addEventListener("click", displayHome);
+btnHome.addEventListener("click", setHome);
 buttonContainer.appendChild(btnHome);
 
 btnMenu.innerText = "Menu";
-btnMenu.setAttribute("id", "menu");
+btnMenu.setAttribute("id", "menuBTN");
 btnMenu.classList.add("nav_button");
-btnMenu.addEventListener("click", hideHome);
+btnMenu.addEventListener("click", setMenu());
 buttonContainer.appendChild(btnMenu);
 
 btnAbout.innerText = "About";
@@ -51,4 +51,14 @@ buttonContainer.appendChild(btnContact);
 function showTabs() {
   const homeTab = document.getElementById("home_container");
   homeTab.style.display = "block";
+}
+
+function setMenu() {
+  displayMenu();
+  hideHome();
+}
+
+function setHome() {
+  displayHome();
+  hideMenu();
 }
