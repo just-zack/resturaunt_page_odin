@@ -3,69 +3,6 @@ var __webpack_exports__ = {};
 /*!*********************!*\
   !*** ./src/home.js ***!
   \*********************/
-const content = document.getElementById("content");
-/*const navigation = document.createElement("div");
-
-navigation.setAttribute("id", "navigation");
-content.appendChild(navigation);
-
-const logo = document.createElement("img");
-logo.src = "./content/logo.png";
-logo.setAttribute("id", "logo");
-navigation.appendChild(logo);
-
-const buttonContainer = document.createElement("div");
-buttonContainer.setAttribute("id", "button_container");
-navigation.appendChild(buttonContainer);
-
-const home = document.createElement("button");
-home.setAttribute("id", "home");
-home.setAttribute("class", "nav_button");
-buttonContainer.appendChild(home);
-
-const menu = document.createElement("button");
-menu.setAttribute("id", "menu");
-menu.setAttribute("class", "nav_button");
-buttonContainer.appendChild(menu);
-
-const about = document.createElement("button");
-about.setAttribute("id", "about");
-about.setAttribute("class", "nav_button");
-buttonContainer.appendChild(about);
-
-const contact = document.createElement("button");
-contact.setAttribute("id", "contact");
-contact.setAttribute("class", "nav_button");
-buttonContainer.appendChild(contact);
-*/
-const hero = document.createElement("div");
-hero.setAttribute("id", "hero");
-content.appendChild(hero);
-
-const heroText = document.createElement("h2");
-heroText.setAttribute("id", "hero_text");
-heroText.innerText = "Fresh off the streets";
-hero.appendChild(heroText);
-
-const text = document.createElement("div");
-text.setAttribute("id", "text");
-content.appendChild(text);
-
-const paragraph = document.createElement("p");
-paragraph.setAttribute("class", "paragraph");
-paragraph.innerText =
-  "Experience the vibrant flavors and culinary delights inspired by street food from around the world, elevated to new heights of sophistication. Our passionate chefs have meticulously crafted a menu that combines the boldness and authenticity of street food with the elegance and refinement of a fine dining experience. Indulge in tantalizing dishes bursting with aromatic spices, fresh ingredients, and innovative twists, all served in a stylish and inviting ambiance. Join us on a culinary journey that celebrates the global street food culture while providing a luxurious and memorable dining experience.";
-text.appendChild(paragraph);
-
-const footer = document.createElement("div");
-footer.setAttribute("id", "footer");
-content.appendChild(footer);
-
-const footerContent = document.createElement("p");
-footerContent.setAttribute("class", "paragraph");
-footerContent.innerText = "Made by Me!";
-footer.appendChild(footerContent);
 
 /******/ })()
 ;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZS5idW5kbGUuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcmVzdHVyYXVudF9wYWdlX29kaW4vLi9zcmMvaG9tZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBjb250ZW50ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJjb250ZW50XCIpO1xuLypjb25zdCBuYXZpZ2F0aW9uID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcblxubmF2aWdhdGlvbi5zZXRBdHRyaWJ1dGUoXCJpZFwiLCBcIm5hdmlnYXRpb25cIik7XG5jb250ZW50LmFwcGVuZENoaWxkKG5hdmlnYXRpb24pO1xuXG5jb25zdCBsb2dvID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImltZ1wiKTtcbmxvZ28uc3JjID0gXCIuL2NvbnRlbnQvbG9nby5wbmdcIjtcbmxvZ28uc2V0QXR0cmlidXRlKFwiaWRcIiwgXCJsb2dvXCIpO1xubmF2aWdhdGlvbi5hcHBlbmRDaGlsZChsb2dvKTtcblxuY29uc3QgYnV0dG9uQ29udGFpbmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbmJ1dHRvbkNvbnRhaW5lci5zZXRBdHRyaWJ1dGUoXCJpZFwiLCBcImJ1dHRvbl9jb250YWluZXJcIik7XG5uYXZpZ2F0aW9uLmFwcGVuZENoaWxkKGJ1dHRvbkNvbnRhaW5lcik7XG5cbmNvbnN0IGhvbWUgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiYnV0dG9uXCIpO1xuaG9tZS5zZXRBdHRyaWJ1dGUoXCJpZFwiLCBcImhvbWVcIik7XG5ob21lLnNldEF0dHJpYnV0ZShcImNsYXNzXCIsIFwibmF2X2J1dHRvblwiKTtcbmJ1dHRvbkNvbnRhaW5lci5hcHBlbmRDaGlsZChob21lKTtcblxuY29uc3QgbWVudSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJidXR0b25cIik7XG5tZW51LnNldEF0dHJpYnV0ZShcImlkXCIsIFwibWVudVwiKTtcbm1lbnUuc2V0QXR0cmlidXRlKFwiY2xhc3NcIiwgXCJuYXZfYnV0dG9uXCIpO1xuYnV0dG9uQ29udGFpbmVyLmFwcGVuZENoaWxkKG1lbnUpO1xuXG5jb25zdCBhYm91dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJidXR0b25cIik7XG5hYm91dC5zZXRBdHRyaWJ1dGUoXCJpZFwiLCBcImFib3V0XCIpO1xuYWJvdXQuc2V0QXR0cmlidXRlKFwiY2xhc3NcIiwgXCJuYXZfYnV0dG9uXCIpO1xuYnV0dG9uQ29udGFpbmVyLmFwcGVuZENoaWxkKGFib3V0KTtcblxuY29uc3QgY29udGFjdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJidXR0b25cIik7XG5jb250YWN0LnNldEF0dHJpYnV0ZShcImlkXCIsIFwiY29udGFjdFwiKTtcbmNvbnRhY3Quc2V0QXR0cmlidXRlKFwiY2xhc3NcIiwgXCJuYXZfYnV0dG9uXCIpO1xuYnV0dG9uQ29udGFpbmVyLmFwcGVuZENoaWxkKGNvbnRhY3QpO1xuKi9cbmNvbnN0IGhlcm8gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuaGVyby5zZXRBdHRyaWJ1dGUoXCJpZFwiLCBcImhlcm9cIik7XG5jb250ZW50LmFwcGVuZENoaWxkKGhlcm8pO1xuXG5jb25zdCBoZXJvVGV4dCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJoMlwiKTtcbmhlcm9UZXh0LnNldEF0dHJpYnV0ZShcImlkXCIsIFwiaGVyb190ZXh0XCIpO1xuaGVyb1RleHQuaW5uZXJUZXh0ID0gXCJGcmVzaCBvZmYgdGhlIHN0cmVldHNcIjtcbmhlcm8uYXBwZW5kQ2hpbGQoaGVyb1RleHQpO1xuXG5jb25zdCB0ZXh0ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbnRleHQuc2V0QXR0cmlidXRlKFwiaWRcIiwgXCJ0ZXh0XCIpO1xuY29udGVudC5hcHBlbmRDaGlsZCh0ZXh0KTtcblxuY29uc3QgcGFyYWdyYXBoID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcInBcIik7XG5wYXJhZ3JhcGguc2V0QXR0cmlidXRlKFwiY2xhc3NcIiwgXCJwYXJhZ3JhcGhcIik7XG5wYXJhZ3JhcGguaW5uZXJUZXh0ID1cbiAgXCJFeHBlcmllbmNlIHRoZSB2aWJyYW50IGZsYXZvcnMgYW5kIGN1bGluYXJ5IGRlbGlnaHRzIGluc3BpcmVkIGJ5IHN0cmVldCBmb29kIGZyb20gYXJvdW5kIHRoZSB3b3JsZCwgZWxldmF0ZWQgdG8gbmV3IGhlaWdodHMgb2Ygc29waGlzdGljYXRpb24uIE91ciBwYXNzaW9uYXRlIGNoZWZzIGhhdmUgbWV0aWN1bG91c2x5IGNyYWZ0ZWQgYSBtZW51IHRoYXQgY29tYmluZXMgdGhlIGJvbGRuZXNzIGFuZCBhdXRoZW50aWNpdHkgb2Ygc3RyZWV0IGZvb2Qgd2l0aCB0aGUgZWxlZ2FuY2UgYW5kIHJlZmluZW1lbnQgb2YgYSBmaW5lIGRpbmluZyBleHBlcmllbmNlLiBJbmR1bGdlIGluIHRhbnRhbGl6aW5nIGRpc2hlcyBidXJzdGluZyB3aXRoIGFyb21hdGljIHNwaWNlcywgZnJlc2ggaW5ncmVkaWVudHMsIGFuZCBpbm5vdmF0aXZlIHR3aXN0cywgYWxsIHNlcnZlZCBpbiBhIHN0eWxpc2ggYW5kIGludml0aW5nIGFtYmlhbmNlLiBKb2luIHVzIG9uIGEgY3VsaW5hcnkgam91cm5leSB0aGF0IGNlbGVicmF0ZXMgdGhlIGdsb2JhbCBzdHJlZXQgZm9vZCBjdWx0dXJlIHdoaWxlIHByb3ZpZGluZyBhIGx1eHVyaW91cyBhbmQgbWVtb3JhYmxlIGRpbmluZyBleHBlcmllbmNlLlwiO1xudGV4dC5hcHBlbmRDaGlsZChwYXJhZ3JhcGgpO1xuXG5jb25zdCBmb290ZXIgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuZm9vdGVyLnNldEF0dHJpYnV0ZShcImlkXCIsIFwiZm9vdGVyXCIpO1xuY29udGVudC5hcHBlbmRDaGlsZChmb290ZXIpO1xuXG5jb25zdCBmb290ZXJDb250ZW50ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcInBcIik7XG5mb290ZXJDb250ZW50LnNldEF0dHJpYnV0ZShcImNsYXNzXCIsIFwicGFyYWdyYXBoXCIpO1xuZm9vdGVyQ29udGVudC5pbm5lclRleHQgPSBcIk1hZGUgYnkgTWUhXCI7XG5mb290ZXIuYXBwZW5kQ2hpbGQoZm9vdGVyQ29udGVudCk7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=
