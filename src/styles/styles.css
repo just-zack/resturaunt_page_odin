@@ -3,6 +3,7 @@
   padding: 0;
   --main_color: black;
   --secondary_color: #ffbd59;
+  font-family: "Bungee", cursive;
 }
 
 body {
@@ -73,6 +74,8 @@ body {
 
 #footer {
   background-color: var(--main_color);
+  align-self: stretch;
+  justify-self: flex-end;
 }
 
 #menu_section {
@@ -81,15 +84,13 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  align-items: center;
 }
 
 #menu {
-  font-size: 2.5rem;
+  font-size: 8rem;
 }
 
 #button_container {
@@ -101,6 +102,7 @@ body {
   background-color: var(--secondary_color);
   border: none;
   font-size: 1rem;
+  margin: 2px;
 }
 
 .menu_button:hover,
@@ -111,8 +113,9 @@ body {
 #menu_general {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  flex: auto;
 }
 
 #menuCard1,
@@ -124,4 +127,25 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex: auto;
+  text-align: center;
+}
+
+#about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+#about_title,
+#about1,
+#about2,
+#about3 {
+  color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
 }

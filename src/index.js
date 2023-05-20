@@ -1,4 +1,4 @@
-import about from "./about.js";
+import about, { displayAbout, hideAbout } from "./about.js";
 import contact from "./contact.js";
 import menu, { displayMenu, hideMenu } from "./menu.js";
 import home, { displayHome, hideHome } from "./home.js";
@@ -40,7 +40,7 @@ buttonContainer.appendChild(btnMenu);
 btnAbout.innerText = "About";
 btnAbout.setAttribute("id", "about");
 btnAbout.classList.add("nav_button");
-btnAbout.onclick = about;
+btnAbout.addEventListener("click", setAbout);
 buttonContainer.appendChild(btnAbout);
 
 btnContact.innerText = "Contact";
@@ -54,6 +54,8 @@ displayHome();
 function setMenu() {
   if ((currentPage = "home")) {
     hideHome();
+  } else if ((currentPage = "about")) {
+    hideAbout();
   }
   displayMenu();
 }
@@ -61,6 +63,16 @@ function setMenu() {
 function setHome() {
   if ((currentPage = "menu")) {
     hideMenu();
+  } else if ((currentPage = "about")) {
+    hideAbout();
   }
   displayHome();
+}
+function setAbout() {
+  if ((currentPage = "menu")) {
+    hideMenu();
+  } else if ((currentPage = "home")) {
+    hideHome();
+  }
+  displayAbout();
 }

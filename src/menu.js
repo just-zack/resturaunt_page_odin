@@ -91,6 +91,16 @@ export function displayMenu() {
   streetSamosasPrice.innerText = "$6";
   streetSamosasPrice.setAttribute("id", "streetSamosasPrice");
   menuCard3.appendChild(streetSamosasPrice);
+
+  const footer = document.createElement("div");
+  footer.setAttribute("id", "footer");
+  menuContainer.appendChild(footer);
+
+  const footerContent = document.createElement("p");
+  footerContent.setAttribute("class", "paragraph");
+  footerContent.setAttribute("id", "paragraph2");
+  footerContent.innerText = "Made by Me!";
+  footer.appendChild(footerContent);
 }
 
 export function hideMenu() {
@@ -119,12 +129,11 @@ export function hideMenu() {
     "streetSamosasDescription"
   );
   const streetSamosasPrice = document.getElementById("streetSamosasPrice");
+  const footer = document.getElementById("footer");
+  const footerContent = document.getElementById("paragraph2");
 
   content.removeChild(menuContainer);
   menuContainer.removeChild(menuTitle);
-  //menuContainer.removeChild(buttonContainer);
-  //buttonContainer.removeChild(food);
-  //buttonContainer.removeChild(drinks);
   menuContainer.removeChild(menuGeneral);
   menuGeneral.removeChild(menuCard1);
   menuCard1.removeChild(streetBurger);
@@ -138,6 +147,8 @@ export function hideMenu() {
   menuCard3.removeChild(streetSamosas);
   menuCard3.removeChild(streetSamosasDescription);
   menuCard3.removeChild(streetSamosasPrice);
+  menuContainer.removeChild(footer);
+  footer.removeChild(footerContent);
 
   currentPage = "";
 }

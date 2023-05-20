@@ -37,8 +37,6 @@ export function displayHome() {
   footerContent.setAttribute("id", "paragraph2");
   footerContent.innerText = "Made by Me!";
   footer.appendChild(footerContent);
-
-  homeContainer.style.display = "block";
 }
 
 export function hideHome() {
