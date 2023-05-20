@@ -45,8 +45,14 @@
   border: none;
   color: var(--secondary_color);
   font-size: 1.3rem;
-  height: 60px;
-  width: 100px;
+  height: 50px;
+  width: 80px;
+  margin: 15px;
+}
+
+.nav_button:hover,
+.nav_button:focus {
+  border-bottom: var(--secondary_color) 2px solid;
 }
 
 #text {
