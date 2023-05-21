@@ -10,6 +10,7 @@ export function displayAbout() {
 
   const aboutTitle = document.createElement("h1");
   aboutTitle.setAttribute("id", "about_title");
+  aboutTitle.innerText = "Our Story";
   aboutContainer.appendChild(aboutTitle);
 
   const about1 = document.createElement("p");
@@ -50,12 +51,12 @@ export function hideAbout() {
   const footer = document.getElementById("footer");
   const footerContent = document.getElementById("paragraph2");
 
-  container.removechild(aboutContainer);
-  aboutContainer.removechild(aboutTitle);
-  aboutContainer.removechild(about1);
-  aboutContainer.removechild(about2);
-  aboutContainer.removechild(about3);
-  aboutContainer.removechild(footer);
+  content.removeChild(aboutContainer);
+  aboutContainer.removeChild(aboutTitle);
+  aboutContainer.removeChild(about1);
+  aboutContainer.removeChild(about2);
+  aboutContainer.removeChild(about3);
+  aboutContainer.removeChild(footer);
   footer.removeChild(footerContent);
 
   currentPage = "";

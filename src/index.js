@@ -50,29 +50,45 @@ btnContact.onclick = contact;
 buttonContainer.appendChild(btnContact);
 
 displayHome();
+currentPage = "home";
 
 function setMenu() {
-  if ((currentPage = "home")) {
+  if (currentPage === "home") {
     hideHome();
-  } else if ((currentPage = "about")) {
+    currentPage = "";
+    displayMenu();
+    currentPage = "menu";
+  } else if (currentPage === "about") {
     hideAbout();
-  }
-  displayMenu();
+    currentPage = "";
+    displayMenu();
+    currentPage = "menu";
+  } else return;
 }
 
 function setHome() {
-  if ((currentPage = "menu")) {
+  if (currentPage === "menu") {
     hideMenu();
-  } else if ((currentPage = "about")) {
+    currentPage = "";
+    displayHome();
+    currentPage = "home";
+  } else if (currentPage === "about") {
     hideAbout();
-  }
-  displayHome();
+    currentPage = "";
+    displayHome();
+    currentPage = "home";
+  } else return;
 }
 function setAbout() {
-  if ((currentPage = "menu")) {
+  if (currentPage === "menu") {
     hideMenu();
-  } else if ((currentPage = "home")) {
+    currentPage = "";
+    displayAbout();
+    currentPage = "about";
+  } else if (currentPage === "home") {
     hideHome();
-  }
-  displayAbout();
+    currentPage = "";
+    displayAbout();
+    currentPage = "about";
+  } else return;
 }
