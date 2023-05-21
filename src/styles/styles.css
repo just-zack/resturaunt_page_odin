@@ -3,7 +3,8 @@
   padding: 0;
   --main_color: black;
   --secondary_color: #ffbd59;
-  font-family: "Bungee", cursive;
+  --header_font: "Bungee", cursive;
+  --text_font: "Comfortaa", cursive;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
 #hero_text {
   color: white;
   font-size: 5rem;
+  font-family: var(--header_font);
 }
 
 .nav_button {
@@ -53,6 +55,7 @@ body {
   height: 50px;
   width: 80px;
   margin: 15px;
+  font-family: var(--header_font);
 }
 
 .nav_button:hover,
@@ -66,7 +69,7 @@ body {
   padding-right: 10vw;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-family: "Comfortaa", cursive;
+  font-family: var(--text_font);
 }
 
 .paragraph {
@@ -87,6 +90,7 @@ body {
 #paragraph2 {
   align-self: stretch;
   justify-self: center;
+  font-family: var(--header_font);
 }
 
 #menu_section {
@@ -102,6 +106,7 @@ body {
 
 #menu {
   font-size: 8rem;
+  font-family: var(--header_font);
 }
 
 #button_container {
@@ -114,6 +119,7 @@ body {
   border: none;
   font-size: 1rem;
   margin: 2px;
+  font-family: var(--text_font);
 }
 
 .menu_button:hover,
@@ -142,7 +148,7 @@ body {
   text-align: center;
   padding-left: 10vw;
   padding-right: 10vw;
-  font-family: "Comfortaa", cursive;
+  font-family: var(--text_font);
 }
 
 #about_container {
@@ -162,5 +168,5 @@ body {
   padding-left: 25vw;
   padding-right: 25vw;
   text-align: center;
-  font-family: "Comfortaa", cursive;
+  font-family: var(--text_font);
 }
