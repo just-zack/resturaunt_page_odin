@@ -66,6 +66,7 @@ body {
   padding-right: 10vw;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-family: "Comfortaa", cursive;
 }
 
 .paragraph {
@@ -141,6 +142,7 @@ body {
   text-align: center;
   padding-left: 10vw;
   padding-right: 10vw;
+  font-family: "Comfortaa", cursive;
 }
 
 #about_container {
@@ -160,4 +162,5 @@ body {
   padding-left: 25vw;
   padding-right: 25vw;
   text-align: center;
+  font-family: "Comfortaa", cursive;
 }
