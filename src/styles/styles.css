@@ -33,7 +33,7 @@ body {
 #hero {
   background-image: url(../content/hero_image.png);
   background-size: cover;
-  height: 80vw;
+  height: 40vw;
   flex: auto;
   display: flex;
   align-items: center;
@@ -62,7 +62,8 @@ body {
 
 #text {
   background-color: var(--main_color);
-  padding: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -74,8 +75,17 @@ body {
 
 #footer {
   background-color: var(--main_color);
+  align-content: stretch;
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+#paragraph2 {
   align-self: stretch;
-  justify-self: flex-end;
+  justify-self: center;
 }
 
 #menu_section {
@@ -114,7 +124,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   flex: auto;
 }
 
@@ -129,6 +139,8 @@ body {
   gap: 20px;
   flex: auto;
   text-align: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 #about_container {
@@ -145,7 +157,7 @@ body {
 #about2,
 #about3 {
   color: white;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 25vw;
+  padding-right: 25vw;
   text-align: center;
 }
